@@ -1,6 +1,5 @@
 package testCases;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -10,26 +9,33 @@ import appUtils.Utils;
 public class TestCase2 extends Utils {
 	
 	@Test
-	public void case1() {
-		System.out.println("Test Case1 executed");
-		test.log(LogStatus.INFO, "Test Case1 executed");
+	public void case5() {
+		test=report.startTest(" Case5");
+
+		System.out.println("Test Case5 executed");
+		test.log(LogStatus.INFO, "Test Case5 executed");
 	}
 	@Test
-	public void case2() {
-		test.log(LogStatus.PASS, "test case two failed");
+	public void case6() {
+		test=report.startTest(" Case6");
+
+		test.log(LogStatus.PASS, "test case6 failed");
 	
 
 	}
 	@Test
-	public void case3() {
-		
-		test.log(LogStatus.PASS, "test case three passed");
+	public void case7() {
+		test=report.startTest(" Case7");
+
+		test.log(LogStatus.PASS, "test case7 passed");
 	
 
 	}
 	@Test
-	public void case4() {
-		test.log(LogStatus.SKIP, "test case four skipped");
+	public void case8() {
+		test=report.startTest(" Case8");
+
+		test.log(LogStatus.SKIP, "test case8 skipped");
 	
 
 		

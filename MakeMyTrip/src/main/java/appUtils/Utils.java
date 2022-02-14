@@ -23,7 +23,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class Utils {
 	public static WebDriver driver;
-	File file = new File("C:\\Users\\SPURGE\\eclipse-workspace\\MakeMyTrip\\src\\main\\java\\appUtils\\InitialSetUp");
+	File file = new File("C:\\Users\\SPURGE\\git\\MakeMyTrip\\MakeMyTrip\\src\\main\\java\\appUtils\\InitialSetUp");
 
 	Properties prop = new Properties();
 	public static ExtentReports report;
@@ -32,7 +32,7 @@ public class Utils {
 
 	
 
-	@BeforeSuite
+	@BeforeTest
 	public void open() throws IOException {
 
 		FileInputStream fi = new FileInputStream(file);
@@ -60,23 +60,29 @@ public class Utils {
 	
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-//------Date Generation------------------------------------------------------------------------------
-		Date dd=new Date();
-		String cdate = dd.toString().replace(" ","_").replace(":", "_");
-//----------------------------------------------------------------------------------------------------
-//-----ExtentReports for provide by relevent codes--------------------------------------------------
-		report=new ExtentReports((".//Reports//"+cdate+".html"), true);
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(url);
 	
 	}
-	@AfterTest
+	@BeforeSuite
+	public void reoports() {
+		
+		//------Date Generation------------------------------------------------------------------------------
+				Date dd=new Date();
+				String cdate = dd.toString().replace(" ","_").replace(":", "_");
+		//----------------------------------------------------------------------------------------------------
+		//-----ExtentReports for provide by relevent codes--------------------------------------------------
+				report=new ExtentReports((".//Reports//"+cdate+".html"), true);
+		//--------------------------------------------------------------------------------------------------
+	}
+	@AfterSuite
 	public void  close() {
 		report.endTest(test);
 		report.flush();
 	}
 	
-	@AfterSuite
+	@AfterTest
 	
 	public void browserclose() {
 		
