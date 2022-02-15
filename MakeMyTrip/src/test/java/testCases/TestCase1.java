@@ -1,5 +1,6 @@
 package testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -11,6 +12,7 @@ public class TestCase1 extends Utils {
 	@Test
 	public void case1() {
 		test=report.startTest(" Case1");
+		Assert.assertTrue(false);
 
 		System.out.println("Test Case1 executed");
 		test.log(LogStatus.INFO, "Test Case1 executed");

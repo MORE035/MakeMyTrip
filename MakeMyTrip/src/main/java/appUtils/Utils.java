@@ -12,7 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -22,28 +23,35 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 
 public class Utils {
-	public static WebDriver driver;
+	public static WebDriver driver=null;
 	File file = new File("C:\\Users\\SPURGE\\git\\MakeMyTrip\\MakeMyTrip\\src\\main\\java\\appUtils\\InitialSetUp");
 
 	Properties prop = new Properties();
 	public static ExtentReports report;
 	public static ExtentTest test;
-	
+	public String url="https://www.cleartrip.com/";
 
 	
 
-	@BeforeTest
-	public void open() throws IOException {
+	@BeforeSuite
+	public   void open() throws IOException {
 
 		FileInputStream fi = new FileInputStream(file);
 
 		prop.load(fi);
-		String url = (String) prop.get("url");
+		// url = (String) prop.get("url");
 
 		System.out.println(url);
 
 		System.out.println(prop.get("BrowserName"));
 		Object BName = prop.get("BrowserName");
+		//------Date Generation------------------------------------------------------------------------------
+		Date dd=new Date();
+		String cdate = dd.toString().replace(" ","_").replace(":", "_");
+//----------------------------------------------------------------------------------------------------
+//-----ExtentReports for provide by relevent codes--------------------------------------------------
+		report=new ExtentReports((".//Reports//"+cdate+".html"), true);
+//--------------------------------------------------------------------------------------------------
 		if (BName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "Browsers/chromedriver.exe");
 			driver = new ChromeDriver();
@@ -65,6 +73,8 @@ public class Utils {
 		driver.get(url);
 	
 	}
+	
+	/*
 	@BeforeSuite
 	public void reoports() {
 		
@@ -76,17 +86,25 @@ public class Utils {
 				report=new ExtentReports((".//Reports//"+cdate+".html"), true);
 		//--------------------------------------------------------------------------------------------------
 	}
-	@AfterSuite
+	*/
+/*	@BeforeTest
+	public void browserurl()  {
+		System.out.println(url);
+
+		driver.get(url);
+
+	} */
+/*	@AfterSuite
 	public void  close() {
 		report.endTest(test);
 		report.flush();
 	}
-	
-	@AfterTest
-	
+	*/
+	@AfterSuite
 	public void browserclose() {
-		
-		driver.close();
+		report.endTest(test);
+		report.flush();
+		driver.quit();
 
 	}
 	
