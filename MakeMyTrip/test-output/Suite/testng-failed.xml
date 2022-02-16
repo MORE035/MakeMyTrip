@@ -11,6 +11,7 @@
           <include name="browserclose"/>
           <include name="open"/>
           <include name="case1"/>
+          <include name="Screenshots"/>
         </methods>
       </class> <!-- testCases.TestCase1 -->
     </classes>

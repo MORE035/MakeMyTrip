@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-15T11:08:16 IST" name="Suite" finished-at="2022-02-15T11:08:17 IST" duration-ms="534">
+  <suite started-at="2022-02-16T10:39:03 IST" name="Suite" finished-at="2022-02-16T10:39:04 IST" duration-ms="652">
     <groups>
     </groups>
-    <test started-at="2022-02-15T11:08:16 IST" name="Test1" finished-at="2022-02-15T11:08:17 IST" duration-ms="376">
+    <test started-at="2022-02-16T10:39:03 IST" name="Test1" finished-at="2022-02-16T10:39:03 IST" duration-ms="536">
       <class name="testCases.TestCase1">
-        <test-method signature="case1()[pri:0, instance:testCases.TestCase1@37d4349f]" started-at="2022-02-15T11:08:16 IST" name="case1" finished-at="2022-02-15T11:08:16 IST" duration-ms="18" status="FAIL">
+        <test-method signature="case1()[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="case1" finished-at="2022-02-16T10:39:03 IST" duration-ms="21" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -53,63 +53,195 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case1 -->
-        <test-method signature="case2()[pri:0, instance:testCases.TestCase1@37d4349f]" started-at="2022-02-15T11:08:17 IST" name="case2" finished-at="2022-02-15T11:08:17 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="Screenshots" finished-at="2022-02-16T10:39:03 IST" duration-ms="201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case1 status=FAILURE method=TestCase1.case1()[pri:0, instance:testCases.TestCase1@2ea41516] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case2()[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="case2" finished-at="2022-02-16T10:39:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case2 -->
-        <test-method signature="case3()[pri:0, instance:testCases.TestCase1@37d4349f]" started-at="2022-02-15T11:08:17 IST" name="case3" finished-at="2022-02-15T11:08:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="Screenshots" finished-at="2022-02-16T10:39:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case2 status=SUCCESS method=TestCase1.case2()[pri:0, instance:testCases.TestCase1@2ea41516] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case3()[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="case3" finished-at="2022-02-16T10:39:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case3 -->
-        <test-method signature="case4()[pri:0, instance:testCases.TestCase1@37d4349f]" started-at="2022-02-15T11:08:17 IST" name="case4" finished-at="2022-02-15T11:08:17 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="Screenshots" finished-at="2022-02-16T10:39:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case3 status=SUCCESS method=TestCase1.case3()[pri:0, instance:testCases.TestCase1@2ea41516] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case4()[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="case4" finished-at="2022-02-16T10:39:03 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case4 -->
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase1@2ea41516]" started-at="2022-02-16T10:39:03 IST" name="Screenshots" finished-at="2022-02-16T10:39:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case4 status=SUCCESS method=TestCase1.case4()[pri:0, instance:testCases.TestCase1@2ea41516] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
       </class> <!-- testCases.TestCase1 -->
     </test> <!-- Test1 -->
-    <test started-at="2022-02-15T11:08:17 IST" name="Test2" finished-at="2022-02-15T11:08:17 IST" duration-ms="56">
+    <test started-at="2022-02-16T10:39:04 IST" name="Test2" finished-at="2022-02-16T10:39:04 IST" duration-ms="29">
       <class name="testCases.TestCase2">
-        <test-method signature="case5()[pri:0, instance:testCases.TestCase2@5a45133e]" started-at="2022-02-15T11:08:17 IST" name="case5" finished-at="2022-02-15T11:08:17 IST" duration-ms="3" status="PASS">
+        <test-method signature="case5()[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="case5" finished-at="2022-02-16T10:39:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case5 -->
-        <test-method signature="case6()[pri:0, instance:testCases.TestCase2@5a45133e]" started-at="2022-02-15T11:08:17 IST" name="case6" finished-at="2022-02-15T11:08:17 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case5 status=SUCCESS method=TestCase2.case5()[pri:0, instance:testCases.TestCase2@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case6()[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="case6" finished-at="2022-02-16T10:39:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case6 -->
-        <test-method signature="case7()[pri:0, instance:testCases.TestCase2@5a45133e]" started-at="2022-02-15T11:08:17 IST" name="case7" finished-at="2022-02-15T11:08:17 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case6 status=SUCCESS method=TestCase2.case6()[pri:0, instance:testCases.TestCase2@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case7()[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="case7" finished-at="2022-02-16T10:39:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case7 -->
-        <test-method signature="case8()[pri:0, instance:testCases.TestCase2@5a45133e]" started-at="2022-02-15T11:08:17 IST" name="case8" finished-at="2022-02-15T11:08:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case7 status=SUCCESS method=TestCase2.case7()[pri:0, instance:testCases.TestCase2@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case8()[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="case8" finished-at="2022-02-16T10:39:04 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case8 -->
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase2@5e600dd5]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case8 status=SUCCESS method=TestCase2.case8()[pri:0, instance:testCases.TestCase2@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
       </class> <!-- testCases.TestCase2 -->
     </test> <!-- Test2 -->
-    <test started-at="2022-02-15T11:08:17 IST" name="Test3" finished-at="2022-02-15T11:08:17 IST" duration-ms="50">
+    <test started-at="2022-02-16T10:39:04 IST" name="Test3" finished-at="2022-02-16T10:39:04 IST" duration-ms="41">
       <class name="testCases.TestCase3">
-        <test-method is-config="true" signature="open()[pri:0, instance:testCases.TestCase3@70e9c95d]" started-at="2022-02-15T11:08:10 IST" name="open" finished-at="2022-02-15T11:08:16 IST" duration-ms="6575" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:38:56 IST" name="open" finished-at="2022-02-16T10:39:03 IST" duration-ms="6470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="case10()[pri:0, instance:testCases.TestCase3@70e9c95d]" started-at="2022-02-15T11:08:17 IST" name="case10" finished-at="2022-02-15T11:08:17 IST" duration-ms="8" status="PASS">
+        <test-method signature="case10()[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="case10" finished-at="2022-02-16T10:39:04 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case10 -->
-        <test-method signature="case11()[pri:0, instance:testCases.TestCase3@70e9c95d]" started-at="2022-02-15T11:08:17 IST" name="case11" finished-at="2022-02-15T11:08:17 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case10 status=SUCCESS method=TestCase3.case10()[pri:0, instance:testCases.TestCase3@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case11()[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="case11" finished-at="2022-02-16T10:39:04 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case11 -->
-        <test-method signature="case12()[pri:0, instance:testCases.TestCase3@70e9c95d]" started-at="2022-02-15T11:08:17 IST" name="case12" finished-at="2022-02-15T11:08:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case11 status=SUCCESS method=TestCase3.case11()[pri:0, instance:testCases.TestCase3@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case12()[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="case12" finished-at="2022-02-16T10:39:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case12 -->
-        <test-method signature="case9()[pri:0, instance:testCases.TestCase3@70e9c95d]" started-at="2022-02-15T11:08:17 IST" name="case9" finished-at="2022-02-15T11:08:17 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case12 status=SUCCESS method=TestCase3.case12()[pri:0, instance:testCases.TestCase3@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method signature="case9()[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="case9" finished-at="2022-02-16T10:39:04 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case9 -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:testCases.TestCase3@70e9c95d]" started-at="2022-02-15T11:08:17 IST" name="browserclose" finished-at="2022-02-15T11:08:18 IST" duration-ms="960" status="PASS">
+        <test-method is-config="true" signature="Screenshots(org.testng.ITestResult)[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="Screenshots" finished-at="2022-02-16T10:39:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=case9 status=SUCCESS method=TestCase3.case9()[pri:0, instance:testCases.TestCase3@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshots -->
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:testCases.TestCase3@6221a451]" started-at="2022-02-16T10:39:04 IST" name="browserclose" finished-at="2022-02-16T10:39:05 IST" duration-ms="1083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->

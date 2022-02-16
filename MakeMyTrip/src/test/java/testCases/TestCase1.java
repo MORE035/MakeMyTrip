@@ -21,9 +21,8 @@ public class TestCase1 extends Utils {
 	public void case2() {
 		test=report.startTest(" Case2");
 
-		test.log(LogStatus.PASS, "test case two failed");
+		test.log(LogStatus.PASS, "test case two passed");
 	
-
 	}
 	@Test
 	public void case3() {

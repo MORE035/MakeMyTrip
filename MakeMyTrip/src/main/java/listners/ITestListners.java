@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 
 import appUtils.Utils;
 
-public class ITestListners extends ScreenShot  implements ITestListener{
+public class ITestListners extends Utils  implements ITestListener{
 
 	@Override
 	public void onStart(ITestContext context) {
