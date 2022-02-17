@@ -28,7 +28,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 
 public class Utils {
-	public static WebDriver driver=null;
+	public  WebDriver driver=null;
 	File file = new File("C:\\Users\\SPURGE\\Desktop\\New folder\\MakeMyTrip\\MakeMyTrip\\src\\main\\java\\appUtils\\InitialSetUp");
 
 	Properties prop = new Properties();
